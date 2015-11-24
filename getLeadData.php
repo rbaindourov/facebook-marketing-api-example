@@ -1,7 +1,7 @@
 <?php
 // Add to header of your file
 require_once __DIR__ . '/vendor/autoload.php';
-require_once ('vendor/developerforce/force.com-toolkit-for-php/soapclient/SforcePartnerClient.php');
+
 
 use FacebookAds\Api;
 use FacebookAds\Object\AdUser;
