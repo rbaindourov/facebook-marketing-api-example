@@ -36,11 +36,8 @@ if (!$_SESSION['facebook_access_token']) {
 }
 
 if ($_SESSION['facebook_access_token']) {
-  echo '<a href="' . $conf['URL'].'getAccountData.php' . '">Get Account Data</a><br/>';
-  echo '<a href="' . $conf['URL'].'getLeadData.php' . '">Get Lead Data</a>';
-
-  
-
+  echo '<a href="' . $conf['URL'].'getAccountData.php">Get Account Data</a><br/>';
+  echo '<a href="' . $conf['URL'].'getLeadData.php">Get Lead Data</a>';
 } else {
   $permissions = ['ads_management', 'manage_pages'];
   $loginUrl = $helper->getLoginUrl($conf['URL'].'getAccessToken.php', $permissions );
